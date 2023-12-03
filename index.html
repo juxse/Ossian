@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <title>Ossian Skincare</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <!-- <li><a href="#">PRODUCT</a></li> -->
+                <li><a href="about.html">ABOUT US</a></li>
+                <!-- <li><a href="contact.html">CONTACT</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="banner">
+            <div class="banner-text">
+                <img id="logoKicil" src="ossian.png">
+                <h2>WELCOME TO,</h2>
+                <h1>OSSIAN SKINCARE</h1>
+                <h3>Ossian Skincare is a straightforward and minimalistic skincare brand dedicated to promoting healthy and radiant skin. 
+                    With a focus on simplicity and effectiveness, Ossian offers a curated selection of high-quality skincare products designed to nourish and enhance your skin's natural beauty. 
+                    Discover a straightforward approach to skincare with Ossian.</h3>
+                <a id="btn" href="https://tinyurl.com/nmrJuxse" target="_blank">
+                    <p>ORDER NOW</p>
+                    <img id="cart" src="cart.png">   
+                </a>
+            </div>
+        </div>
+    </div>    
+    
+    <section class="product-list">
+        <div class="product" onclick="showProductDetail('product1')">
+            <div class="product-box">
+                <img src="Product1.jpg" alt="Product 1">
+                <h3>Day Cream</h3>
+            </div>
+        </div>
+        <div class="product" onclick="showProductDetail('product2')">
+            <div class="product-box">
+                <img src="Product2.jpg" alt="Product 2">
+                <h3>Night Cream</h3>
+            </div>
+        </div>
+        <div class="product" onclick="showProductDetail('product3')">
+            <div class="product-box">
+                <img src="Product3.jpeg" alt="Product 3">
+                <h3>Sunscreen Mist</h3>
+            </div>
+        </div>
+    </section>
+    
+    <div class="product-detail" id="product1Detail">
+        <img src="product1.jpg" alt="Product 1">
+        <div class="product-desc">
+            <p>Unveil a luminous complexion with Ossian's Day Brilliance Cream. This feather-light formula hydrates and nourishes your skin throughout the day, promoting a radiant glow. Infused with Ossian's signature blend of botanical extracts, it not only moisturizes but also shields your skin from daily environmental stressors. Elevate your daily skincare routine with this revitalizing day cream, and embrace the confidence that comes with healthy, glowing skin.</p>
+            <button onclick="hideProductDetail('product1Detail')">Close</button>
+        </div>
+    </div>
+
+    <div class="product-detail" id="product2Detail">
+        <img src="product2.jpg" alt="Product 2">
+        <div class="product-desc">
+            <p> Indulge your skin in the luxurious care of Ossian's Midnight Renewal Night Cream. As you rest, this rich and velvety cream works tirelessly to hydrate and rejuvenate, diminishing the appearance of fine lines and promoting a smoother complexion. Formulated with Ossian's exclusive nighttime blend, it nourishes and repairs, leaving you to wake up to a revitalized and refreshed visage. Make Ossian's Midnight Renewal Night Cream an essential part of your evening ritual for timeless, radiant skin.</p>
+            <button onclick="hideProductDetail('product2Detail')">Close</button>
+        </div>
+    </div>
+
+    <div class="product-detail" id="product3Detail">
+        <img src="product3.jpeg" alt="Product 3">
+        <div class="product-desc">
+            <p>Embrace the sun with confidence using Ossian's SunGuard Mist. This ultra-fine sunscreen mist provides broad-spectrum protection against harmful UV rays, ensuring your skin stays shielded during your outdoor adventures. The non-greasy and refreshing formula is easy to apply, making sun protection a breeze. Carry the SunGuard Mist wherever you go, and let Ossian be your trusted companion for sun-kissed days without compromise.</p>
+            <button onclick="hideProductDetail('product3Detail')">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="social-icons">Follow us on our social media for more updates:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ossianskincare/" target="_blank"><img class="social-logo" src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
