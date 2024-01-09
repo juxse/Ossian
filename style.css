@@ -130,7 +130,7 @@ header {
 }
 
 .navbar a:hover {
-    color: #000; 
+    color: #000; /* Change the color on hover */
 }
 
 .banner img {
@@ -198,7 +198,8 @@ header {
     flex-direction: column;
     background-color: #f4f7f7;
     margin-left: 20px;
-    border-radius: 10px; 
+    border-radius: 10px; /* Adjust the value as needed for the desired roundness */
+}
 
 .product-desc button{
     border-style: none;
